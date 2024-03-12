@@ -3,18 +3,18 @@
     <model name="camera">
         <pose>0 0 0 0 0 0</pose>
         <link name='camera_link'>
-            <pose frame=''>-0.118317 0.002195 0.004205 -0 -0 -3.12703</pose>
+            <pose frame=''>-0 0 0 0 0 0</pose>
             <inertial>
-                <mass>0.1</mass>
+                <mass>0.0</mass>
                 <inertia>
-                    <ixx>1</ixx>
+                    <ixx>0</ixx>
                     <ixy>0</ixy>
                     <ixz>0</ixz>
-                    <iyy>1</iyy>
+                    <iyy>0</iyy>
                     <iyz>0</iyz>
-                    <izz>1</izz>
+                    <izz>0</izz>
                 </inertia>
-                <pose frame=''>0 0 0 0 -0 0</pose>
+                <pose frame=''>0 0 0 0 0 0</pose>
             </inertial>
             <self_collide>0</self_collide>
             <kinematic>0</kinematic>
@@ -22,8 +22,8 @@
                 <camera name="head">
                     <horizontal_fov>1.3962634</horizontal_fov>
                     <image>
-                        <width>800</width>
-                        <height>800</height>
+                        <width>680</width>
+                        <height>480</height>
                         <format>R8G8B8</format>
                     </image>
                     <clip>
@@ -32,7 +32,7 @@
                     </clip>
                 </camera>
                 <always_on>1</always_on>
-                <update_rate>30</update_rate>
+                <update_rate>60</update_rate>
                 <visualize>1</visualize>
                 <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
                     <alwaysOn>true</alwaysOn>

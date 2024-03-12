@@ -112,7 +112,7 @@
     
     <include>
       <uri>model://aruco</uri>
-      <pose degrees="true">0 0 0 0 0 0</pose>
+      <pose degrees="true">0 0 0 0 0 -90</pose>
     </include>
 
     <include>
