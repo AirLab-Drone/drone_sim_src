@@ -55,7 +55,7 @@
       <direction>-0.5 0.1 -0.9</direction>
     </light>
 
-    <model name="axes">
+    <!-- <model name="axes">
       <static>1</static>
       <link name="link">
         <visual name="r">
@@ -108,18 +108,23 @@
           <update_rate>1</update_rate>
         </sensor>
       </link>
-    </model>
+    </model> -->
     
     <include>
       <uri>model://aruco</uri>
       <pose degrees="true">0 0 0 0 0 -90</pose>
     </include>
 
+    <!-- <include>
+      <uri>model://camera</uri>
+      <pose>0 0 10 0 1.5708 0</pose>
+    </include> -->
+
     <include>
-      <!-- <uri>model://iris_with_ardupilot</uri> -->
       <uri>model://iris_with_ardupilot_camera</uri>
       <pose degrees="true">0 0 0.195 0 0 0</pose>
     </include>
+
 
   </world>
 </sdf>

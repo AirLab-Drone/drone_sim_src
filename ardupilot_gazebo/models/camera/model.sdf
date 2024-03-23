@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <sdf version="1.6">
     <model name="camera">
+        <static>true</static>
         <pose>0 0 0 0 0 0</pose>
         <link name='camera_link'>
             <pose frame=''>-0 0 0 0 0 0</pose>
