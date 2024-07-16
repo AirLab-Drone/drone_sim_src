@@ -4,9 +4,10 @@
     <include>
       <uri>model://iris_with_standoffs</uri>
     </include>
+    
     <include>
       <uri>model://camera</uri>
-      <pose>0 0 -0.1 0 1.5708 0</pose> <!-- 相機旋轉180度 -->
+      <pose>0 0 -0.07 0 1.5708 0</pose> <!-- 相機旋轉180度 -->
     </include>
 
     <joint name='camera_joint' type='fixed'>
