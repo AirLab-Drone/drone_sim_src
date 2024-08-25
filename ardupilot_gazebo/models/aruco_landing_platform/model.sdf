@@ -26,7 +26,7 @@
 
       <!-- 10cm x 10cm 的 Aruco 圖片 -->
       <visual name="aruco_10x10">
-        <pose>0 0 0.03 0 0 0</pose> <!-- 位置：距離地面高度 0.03m -->
+        <pose>0 -0.164 0.03 0 0 0</pose> <!-- 位置：距離地面高度 0.03m -->
         <geometry>
           <plane>
             <normal>0 0 1</normal>
@@ -49,11 +49,11 @@
 
       <!-- 20cm x 20cm 的 Aruco 圖片 -->
       <visual name="aruco_20x20">
-        <pose>0 0.12 0.03 0 0 0</pose> <!-- 位置：距離中心右邊20cm，距離地面高度 0.03m -->
+        <pose>0 0 0.03 0 0 0</pose> <!-- 位置：距離中心右邊20cm，距離地面高度 0.03m -->
         <geometry>
           <plane>
             <normal>0 0 1</normal>
-            <size>0.2 0.2</size> <!-- 平面的尺寸為20cm x 20cm -->
+            <size>0.187 0.187</size> <!-- 平面的尺寸為20cm x 20cm -->
           </plane>
         </geometry>
         <material>
