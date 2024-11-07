@@ -3,18 +3,39 @@
   <model name="aruco_landing_platform">
     <static>true</static>
     <link name="link">
-      <!-- 長方體 -->
       <collision name="collision">
+        <pose>0 0 0.75 0 0 0</pose>
         <geometry>
           <box>
-            <size>10 10 0.05</size> <!-- 長寬高分別為1m x 1m x 0.05m -->
+            <size>0.83 0.83 1.5</size> <!-- 長寬高分別為10m x 10m x 1.5m -->
           </box>
         </geometry>
       </collision>
       <visual name="rectangle">
+        <pose>0 0 0.75 0 0 0</pose>
         <geometry>
           <box>
-            <size>1 1 0.05</size>
+            <size>0.83 0.83 1.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.7 0.7 0.7 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <!-- 地板 -->
+      <collision name="ground_coll">
+        <geometry>
+          <box>
+            <size>10 10 0.03</size> <!-- 長寬高分別為10m x 10m x 1.5m -->
+          </box>
+        </geometry>
+      </collision>
+      <visual name="ground_visual">
+        <geometry>
+          <box>
+            <size>10 10 0.03</size> <!-- 長寬高分別為10m x 10m x 1.5m -->
           </box>
         </geometry>
         <material>
@@ -26,7 +47,7 @@
 
       <!-- 10cm x 10cm 的 Aruco 圖片 -->
       <visual name="aruco_10x10">
-        <pose>0 -0.12 0.03 0 0 0</pose> <!-- 位置：距離地面高度 0.03m -->
+        <pose>0 -0.12 1.53 0 0 0</pose> <!-- 位置：距離地面高度 1.53m -->
         <geometry>
           <plane>
             <normal>0 0 1</normal>
@@ -49,7 +70,7 @@
 
       <!-- 20cm x 20cm 的 Aruco 圖片 -->
       <visual name="aruco_20x20">
-        <pose>0 0 0.03 0 0 0</pose> <!-- 位置：距離中心右邊20cm，距離地面高度 0.03m -->
+        <pose>0 0 1.53 0 0 0</pose> <!-- 位置：距離中心右邊20cm，距離地面高度 1.53m -->
         <geometry>
           <plane>
             <normal>0 0 1</normal>

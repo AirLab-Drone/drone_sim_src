@@ -238,17 +238,22 @@
 
     <include>
       <uri>model://iris_with_ardupilot_camera</uri>
-      <pose degrees="true">0 0 0.23 0 0 0</pose>
+      <pose degrees="true">5 1 1.73 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://aruco_landing_platform</uri>
-      <pose degrees="true">0 0 0 0 0 0</pose>
+      <pose degrees="true">5 1 0 0 0 0</pose>
     </include>
 
     <include>
       <uri>model://fire</uri>
       <pose degrees="true">1 0 0.5 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://factory</uri>
+      <pose degrees="true">-9 -8 0 0 0 0</pose>
     </include>
   </world>
 </sdf>

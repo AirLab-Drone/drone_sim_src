@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<sdf version="1.9">
+  <model name="factory">
+    <static>true</static>
+    <link name="link">
+      <!-- 碰撞元素 -->
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>factory_meter.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <!-- 視覺元素 -->
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>factory_meter.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.7 0.7 0.7 1</ambient>
+          <diffuse>0.7 0.7 0.7 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
