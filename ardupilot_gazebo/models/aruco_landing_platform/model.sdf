@@ -1,7 +1,7 @@
 <?xml version='1.0'?>
 <sdf version="1.9">
   <model name="aruco_landing_platform">
-    <static>true</static>
+    <static>false</static>
     <link name="link">
       <collision name="collision">
         <pose>0 0 0.75 0 0 0</pose>
@@ -25,17 +25,17 @@
         </material>
       </visual>
       <!-- 地板 -->
-      <collision name="ground_coll">
+      <!-- <collision name="ground_coll">
         <geometry>
           <box>
-            <size>10 10 0.03</size> <!-- 長寬高分別為10m x 10m x 1.5m -->
+            <size>10 10 0.03</size> 
           </box>
         </geometry>
       </collision>
       <visual name="ground_visual">
         <geometry>
           <box>
-            <size>10 10 0.03</size> <!-- 長寬高分別為10m x 10m x 1.5m -->
+            <size>10 10 0.03</size> 
           </box>
         </geometry>
         <material>
@@ -43,7 +43,7 @@
           <diffuse>0.7 0.7 0.7 1</diffuse>
           <specular>0.1 0.1 0.1 1</specular>
         </material>
-      </visual>
+      </visual> -->
 
       <!-- 10cm x 10cm 的 Aruco 圖片 -->
       <visual name="aruco_10x10">

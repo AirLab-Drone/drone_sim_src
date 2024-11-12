@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="lidar2">
+    <pose>0 0 0 0 0 0</pose>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <mass>0.0</mass>
+        <inertia>
+          <ixx>0.0</ixx>
+          <iyy>0.0</iyy>
+          <izz>0.0</izz>
+        </inertia>
+      </inertial>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.05 0.1 0.1</size>
+          </box>
+        </geometry>
+      </visual>
+      <!-- 添加突起 -->
+      <visual name="protrusion_visual">
+        <pose>0.05 0 0 0 1.57 0</pose>
+        <pose>0.1 0 0 1.57 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+      </visual>
+      <!-- 突起結束 -->
+      <sensor name='gpu_lidar' type='gpu_lidar'>
+        <pose relative_to='lidar_frame'>0 0 0 0 0 0</pose>
+        <topic>lidar2</topic>
+        <update_rate>30</update_rate> <!-- 更新率設置為 30Hz -->
+        <ray>
+          <scan>
+            <horizontal>
+              <samples>1</samples>
+              <resolution>1</resolution>
+              <min_angle>0</min_angle> <!-- 0 degrees -->
+              <max_angle>0</max_angle> <!-- 0 degrees -->
+            </horizontal>
+          </scan>
+          <range>
+            <min>0.08</min>
+            <max>10.0</max>
+            <resolution>0.01</resolution>
+          </range>
+        </ray>
+        <always_on>1</always_on>
+        <visualize>true</visualize>
+      </sensor>
+    </link>
+  </model>
+</sdf>
