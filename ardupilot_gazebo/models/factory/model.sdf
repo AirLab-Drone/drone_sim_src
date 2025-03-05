@@ -15,7 +15,7 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>factory_meter.stl</uri>
+            <uri>6m_hight.stl</uri>
           </mesh>
         </geometry>
         <material>

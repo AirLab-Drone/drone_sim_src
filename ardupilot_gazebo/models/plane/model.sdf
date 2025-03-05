@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="plane">
+    <static>true</static>
+    <pose>0 0 0 0 0 0</pose>
+    <link name="plane_link">
+      <collision name="plane_collision">
+        <geometry>
+          <plane>
+            <size>10 10</size>
+          </plane>
+        </geometry>
+      </collision>
+      <visual name="plane_visual">
+        <geometry>
+          <plane>
+            <size>10 10</size>
+          </plane>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
